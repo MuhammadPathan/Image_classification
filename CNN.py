@@ -37,3 +37,8 @@ val_ds = tf.keras.preprocessing.image_dataset_from_directory(
     seed=123,
     image_size=(img_height, img_width),
     batch_size=batch_size)
+#print class num and names
+class_names = train_ds.class_names
+print(class_names)
+num_of_classes=len(class_names)
+print(num_of_classes)
