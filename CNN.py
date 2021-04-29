@@ -65,3 +65,10 @@ model.summary()
 model.compile(loss='binary_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
+
+epochs = 10
+history = model.fit(
+  train_ds,
+  validation_data=val_ds,
+  epochs=epochs
+)
